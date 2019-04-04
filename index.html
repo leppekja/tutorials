@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-image="https://leppekja.github.io/tutorials/images/compass.png">
+				<h2>Mapping Data with Arc GIS</h2>
+				<p>Michigan Community Service Commission</p>
+				<h6><a href="https://forms.gle/vysGuYBinpypo1yBA">Before we get started, see what you know!</a></h6>
+				</section>
+				<section>
+					<section data-background-image="https://upload.wikimedia.org/wikipedia/en/f/f1/Down_Arrow_Icon.png" data-background-size="400px">
+						<p>Why map data?</p>
+					</section>
+							<section><p><ul>
+								<li>Create visualizations to communicate stories</li>
+								<li>Spot spatial patterns to improve communities</li>
+								<li>Increase our understanding of Michigan</li></ul></p>
+							</section>
+				</section>
+				<section data-background-iframe="https://www.arcgis.com/apps/Embed/index.html?webmap=cd8f179db97c42788d64e3dcb0409a80&extent=-97.935,40.0971,-72.0293,49.9955&zoom=true&previewImage=false&scale=true&disable_scroll=true&theme=light" data-background-interactive>
+				</section>
+				<section>GIS: Geographic Information System<br> Working in Layers<img src="https://leppekja.github.io/tutorials/images/gis open.png"></section>
+				<section>
+					<section data-background-image="https://leppekja.github.io/tutorials/images/mi blank.png"></section>
+					<section><p>Table of Contents<ul>
+						<li>Reference Layer - places & names</li>
+						<li>Basemap - background geography</li></ul></p><br>
+					</section>
+					<section>Adding Data <br>
+					<img src="https://leppekja.github.io/tutorials/images/data.png">
+						<ul>
+						<li>Microsoft Excel Tables (.csv, .xlsx)</li>
+						<li>KML files (Google Maps, etc.)</li>
+						<li>Shapefiles (Michigan Open Data Portal)</li>
+					</section>
+				</section>
+				<section>Brief Best Practices<br>Make sure the data is properly formatted consistently.
+					<ul>
+					<li>Field names must start with a letter</li>
+					<li>Field names must contain only letters, numbers, and underscores</li>
+					<li>Field names must not exceed 64 characters</li>
+				</section>
+				<section>
+					<section>Thanks for listening.<a href="https://forms.gle/B4XXoUh2LuaHaSxT6"> Try the quiz again!</a></section>
+					<section>Visit <a href="https://kahoot.it/">Kahoot!</a> to join the game. The PIN is ****.</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
