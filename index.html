@@ -7,7 +7,7 @@
 		<title>ArcGIS Tutorial</title>
 
 		<link rel="stylesheet" href="leppekja.github.io/tutorials/reveal.css">
-		<link rel="stylesheet" href="leppekja.github.io/tutorials/black.css">
+		<link rel="stylesheet" href="leppekja.github.io/tutorials/black.css" id="theme">
 
 	</head>
 	<body>
@@ -34,6 +34,12 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
